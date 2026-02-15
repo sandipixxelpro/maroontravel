@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Malang - Panduan Wisata Lengkap | Maroon Travel</title>
+    <meta name="description"
+        content="Panduan lengkap wisata Malang Raya: destinasi populer, itinerary 1-3 hari, kuliner legendaris, dan tips perjalanan. Rencanakan liburan sempurna Anda!">
+    <meta name="keywords"
+        content="wisata malang, explore malang, itinerary malang, destinasi malang, liburan malang, maroon travel">
+    <link rel="canonical" href="https://maroontravel.web.id/explore-malang.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maroontravel.web.id/explore-malang.html" />
+    <meta property="og:title" content="Explore Malang - Panduan Wisata Lengkap | Maroon Travel" />
+    <meta property="og:description"
+        content="Jelajahi keindahan Malang Raya dengan panduan wisata lengkap dari Maroon Travel. Destinasi, itinerary, kuliner, dan tips perjalanan." />
+    <meta property="og:image" content="https://maroontravel.web.id/assets/destination-malang.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Panduan Wisata Malang Raya - Maroon Travel" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Maroon Travel" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://maroontravel.web.id/explore-malang.html" />
+    <meta name="twitter:title" content="Explore Malang - Panduan Wisata Lengkap | Maroon Travel" />
+    <meta name="twitter:description"
+        content="Jelajahi keindahan Malang Raya dengan panduan wisata lengkap dari Maroon Travel." />
+    <meta name="twitter:image" content="https://maroontravel.web.id/assets/destination-malang.jpg" />
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .explore-hero {
+            height: 60vh;
+            min-height: 450px;
+            background: linear-gradient(135deg, rgba(128, 0, 32, 0.85), rgba(196, 30, 58, 0.75)), url('assets/destination-malang.jpg')center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding-top: 80px
+        }
+
+        .explore-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px
+        }
+
+        .explore-hero p {
+            font-size: 1.2rem;
+            opacity: .9;
+            max-width: 600px;
+            margin: 0 auto 30px
+        }
+
+        .explore-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px
+        }
+
+        .intro-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px
+        }
+
+        .intro-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px
+        }
+
+        .intro-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px
+        }
+
+        .intro-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .15)
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin: 50px 0
+        }
+
+        .highlight-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            transition: .3s
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px)
+        }
+
+        .highlight-card i {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 15px
+        }
+
+        .highlight-card h4 {
+            margin-bottom: 10px
+        }
+
+        .highlight-card p {
+            font-size: .9rem;
+            color: #666
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px
+        }
+
+        .itinerary-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap
+        }
+
+        .itinerary-tab {
+            padding: 12px 30px;
+            border-radius: 50px;
+            background: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: .3s
+        }
+
+        .itinerary-tab.active {
+            background: var(--gradient-primary);
+            color: #fff
+        }
+
+        .itinerary-content {
+            display: none
+        }
+
+        .itinerary-content.active {
+            display: block
+        }
+
+        .day-schedule {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            margin-bottom: 30px
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #eee
+        }
+
+        .day-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700
+        }
+
+        .day-title h3 {
+            margin: 0 0 5px;
+            font-size: 1.4rem
+        }
+
+        .day-title span {
+            color: #888;
+            font-size: .9rem
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e0e0e0
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 25px
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 2px var(--color-primary)
+        }
+
+        .timeline-item h4 {
+            margin: 0 0 8px;
+            color: var(--color-dark)
+        }
+
+        .timeline-item .time {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: .9rem;
+            margin-bottom: 5px
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: #666;
+            font-size: .95rem
+        }
+
+        .dest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0
+        }
+
+        .dest-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .1);
+            transition: .3s
+        }
+
+        .dest-card:hover {
+            transform: translateY(-10px)
+        }
+
+        .dest-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover
+        }
+
+        .dest-card-content {
+            padding: 25px
+        }
+
+        .dest-card h4 {
+            margin: 0 0 10px
+        }
+
+        .dest-card p {
+            color: #666;
+            font-size: .9rem;
+            margin-bottom: 15px
+        }
+
+        .dest-card .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .dest-card .tag {
+            background: #fff0f0;
+            color: var(--color-primary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: .8rem
+        }
+
+        .cta-box {
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            color: #fff;
+            margin: 60px 0
+        }
+
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px
+        }
+
+        .cta-box p {
+            opacity: .9;
+            margin-bottom: 25px
+        }
+
+        .cta-box .btn-white {
+            background: #fff;
+            color: var(--color-primary);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: .3s
+        }
+
+        .cta-box .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px
+        }
+
+        .tip-card {
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            gap: 20px
+        }
+
+        .tip-card i {
+            font-size: 2rem;
+            color: var(--color-primary)
+        }
+
+        .tip-card h4 {
+            margin: 0 0 10px
+        }
+
+        .tip-card p {
+            margin: 0;
+            color: #666;
+            font-size: .95rem
+        }
+
+        @media(max-width:992px) {
+
+            .intro-section,
+            .tips-grid {
+                grid-template-columns: 1fr
+            }
+
+            .highlights-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .dest-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:600px) {
+            .explore-hero h1 {
+                font-size: 2rem
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo"><i
+                    class="fas fa-plane-departure"></i><span>Maroon<strong>Travel</strong></span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="service.html" class="nav-link">Services</a>
+                <a href="destination.html" class="nav-link active">Destinations</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="https://wa.me/62895639068080" target="_blank" class="btn-primary"
+                    style="padding:8px 20px;border-radius:50px;margin-left:10px">Contact Us <i
+                        class="fab fa-whatsapp"></i></a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="explore-hero">
+        <div>
+            <span class="hero-badge"><i class="fas fa-map-marked-alt"></i> Panduan Wisata Lengkap</span>
+            <h1>Explore <span class="gradient-text"
+                    style="background:linear-gradient(135deg,#ffd700,#fff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Malang</span>
+            </h1>
+            <p>Jelajahi keindahan Kota Bunga dengan panduan lengkap destinasi, itinerary, kuliner, dan tips perjalanan
+                terbaik.</p>
+            <a href="#itinerary" class="btn-primary" style="padding:15px 35px"><i class="fas fa-route"></i> Lihat
+                Itinerary</a>
+        </div>
+    </section>
+
+    <div class="explore-container">
+        <section class="intro-section">
+            <div class="intro-content">
+                <h2>Selamat Datang di <span class="gradient-text">Malang Raya</span></h2>
+                <p>Malang adalah permata tersembunyi di Jawa Timur yang menawarkan perpaduan sempurna antara keindahan
+                    alam, warisan sejarah, kuliner legendaris, dan suasana kota yang nyaman. Dengan udara sejuk di
+                    ketinggian 400-600 mdpl, Malang menjadi destinasi favorit wisatawan domestik maupun mancanegara.</p>
+                <p>Dari puncak Gunung Bromo yang megah, air terjun tersembunyi, hingga kafe-kafe instagramable di
+                    Kayutangan Heritage—Malang Raya memiliki segalanya untuk liburan yang sempurna.</p>
+                <div style="display:flex;gap:15px;margin-top:25px">
+                    <a href="https://wa.me/62895639068080?text=Halo%20Admin%2C%20saya%20tertarik%20paket%20wisata%20Malang"
+                        class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Konsultasi Gratis</a>
+                    <a href="packages.html" class="btn-outline">Lihat Paket</a>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="assets/destination-malang.jpg" alt="Pemandangan Kota Malang">
+            </div>
+        </section>
+
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <i class="fas fa-mountain"></i>
+                <h4>Wisata Alam</h4>
+                <p>Bromo, air terjun, pantai selatan, dan hutan pinus yang memukau</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-landmark"></i>
+                <h4>Heritage & Sejarah</h4>
+                <p>Candi, bangunan kolonial, dan museum bersejarah</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-utensils"></i>
+                <h4>Kuliner Legendaris</h4>
+                <p>Bakso, rawon, es kopi, dan oleh-oleh khas</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-camera"></i>
+                <h4>Spot Instagramable</h4>
+                <p>Kafe aesthetic dan spot foto viral</p>
+            </div>
+        </div>
+
+        <section id="itinerary">
+            <h2 class="section-title">Itinerary <span class="gradient-text">Tentatif</span></h2>
+            <div class="itinerary-tabs">
+                <button class="itinerary-tab active" onclick="showItinerary('1day')">1 Hari</button>
+                <button class="itinerary-tab" onclick="showItinerary('2day')">2 Hari 1 Malam</button>
+                <button class="itinerary-tab" onclick="showItinerary('3day')">3 Hari 2 Malam</button>
+            </div>
+
+            <div id="1day" class="itinerary-content active">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>City Tour Malang</h3><span>Best for: Weekend getaway, first-timer</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Sarapan Kuliner Malang</h4>
+                            <p>Nikmati Rawon Nguling atau Bakso President yang legendaris</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>Kayutangan Heritage</h4>
+                            <p>Jelajahi kawasan kolonial, foto aesthetic, ngopi di kafe vintage</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Makan Siang</h4>
+                            <p>Nasi Pecel Kawi atau Soto Gebrak khas Malang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">13:30</div>
+                            <h4>Museum Brawijaya</h4>
+                            <p>Pelajari sejarah perjuangan kemerdekaan Indonesia</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">15:30</div>
+                            <h4>Jalan Ijen</h4>
+                            <p>Boulevard dengan bangunan art deco dan pohon rindang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">17:00</div>
+                            <h4>Alun-Alun Malang</h4>
+                            <p>Sunset, kuliner malam, dan belanja oleh-oleh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="2day" class="itinerary-content">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>Kota Batu & Wisata Alam</h3><span>Theme park, agrowisata, view pegunungan</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Berangkat ke Batu</h4>
+                            <p>Perjalanan 45 menit dari Malang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:00</div>
+                            <h4>Jatim Park 2</h4>
+                            <p>Museum Satwa, Batu Secret Zoo - cocok untuk keluarga</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:30</div>
+                            <h4>Makan Siang</h4>
+                            <p>Warung Lesehan dengan view sawah dan pegunungan</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">14:00</div>
+                            <h4>Petik Apel</h4>
+                            <p>Agrowisata petik apel langsung dari kebun</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">16:30</div>
+                            <h4>Coban Rais</h4>
+                            <p>Sunset di lokasi wisata hits dengan banyak spot foto</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">19:00</div>
+                            <h4>Alun-Alun Batu</h4>
+                            <p>Dinner dan menikmati city light malam hari</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">2</div>
+                        <div class="day-title">
+                            <h3>City Tour & Pulang</h3><span>Kuliner, heritage, belanja oleh-oleh</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Sarapan</h4>
+                            <p>Bubur Ayam Kampung atau Nasi Goreng Sapi</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>Kayutangan Heritage</h4>
+                            <p>Walking tour kawasan kolonial</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Makan Siang & Oleh-oleh</h4>
+                            <p>Belanja keripik tempe, strudel, dan kripik buah</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">14:00</div>
+                            <h4>Pulang</h4>
+                            <p>Transfer ke stasiun/bandara</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="3day" class="itinerary-content">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>Bromo Sunrise</h3><span>Pengalaman sunrise paling ikonik di Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">00:00</div>
+                            <h4>Berangkat ke Bromo</h4>
+                            <p>Start midnight dari Malang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">03:30</div>
+                            <h4>Naik Jeep</h4>
+                            <p>Jelajah lautan pasir dengan jeep 4x4</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">04:30</div>
+                            <h4>Penanjakan</h4>
+                            <p>Tunggu golden sunrise dengan view 4 gunung</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">06:30</div>
+                            <h4>Kawah Bromo</h4>
+                            <p>Naik tangga 250 anak tangga ke bibir kawah</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">10:00</div>
+                            <h4>Kembali ke Hotel</h4>
+                            <p>Istirahat dan refresh</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">15:00</div>
+                            <h4>Free Time</h4>
+                            <p>Jalan-jalan santai di sekitar hotel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">2</div>
+                        <div class="day-title">
+                            <h3>Pantai Selatan Malang</h3><span>Eksplorasi pantai tersembunyi</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">07:00</div>
+                            <h4>Berangkat</h4>
+                            <p>Perjalanan 2-3 jam ke pantai selatan</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">10:00</div>
+                            <h4>Pantai Tiga Warna</h4>
+                            <p>Snorkeling di pantai dengan 3 gradasi warna</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">13:00</div>
+                            <h4>Pantai Goa Cina</h4>
+                            <p>Makan siang seafood segar</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">15:00</div>
+                            <h4>Pantai Balekambang</h4>
+                            <p>Iconis dengan Pura di tengah laut</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">18:00</div>
+                            <h4>Kembali ke Malang</h4>
+                            <p>Dinner di kota</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">3</div>
+                        <div class="day-title">
+                            <h3>Batu & Pulang</h3><span>Theme park dan oleh-oleh</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Jatim Park 3</h4>
+                            <p>Dino Park dan The Legend Star</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Lunch & Belanja</h4>
+                            <p>Oleh-oleh khas Batu dan Malang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">14:00</div>
+                            <h4>Pulang</h4>
+                            <p>Transfer ke stasiun/bandara</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Destinasi <span class="gradient-text">Populer</span></h2>
+            <div class="dest-grid">
+                <div class="dest-card"><img src="assets/hero.jpg" alt="Bromo">
+                    <div class="dest-card-content">
+                        <h4>Gunung Bromo</h4>
+                        <p>Sunrise spektakuler di lautan pasir dengan kawah aktif</p>
+                        <div class="tags"><span class="tag">Sunrise</span><span class="tag">Adventure</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/destination-batu.jpg" alt="Kota Batu">
+                    <div class="dest-card-content">
+                        <h4>Kota Batu</h4>
+                        <p>Theme park, agrowisata, air terjun, dan glamping</p>
+                        <div class="tags"><span class="tag">Family</span><span class="tag">Nature</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/pantai-balekambang.png" alt="Pantai Selatan">
+                    <div class="dest-card-content">
+                        <h4>Pantai Selatan</h4>
+                        <p>Deretan pantai eksotis dengan pasir putih dan biru</p>
+                        <div class="tags"><span class="tag">Beach</span><span class="tag">Snorkeling</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/destination-malang.jpg" alt="Kayutangan">
+                    <div class="dest-card-content">
+                        <h4>Kayutangan Heritage</h4>
+                        <p>Kawasan kolonial dengan kafe aesthetic</p>
+                        <div class="tags"><span class="tag">Heritage</span><span class="tag">Instagramable</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/candi-singosari.png" alt="Candi">
+                    <div class="dest-card-content">
+                        <h4>Candi Singosari</h4>
+                        <p>Peninggalan Kerajaan Singhasari abad ke-13</p>
+                        <div class="tags"><span class="tag">History</span><span class="tag">Culture</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/kebun-apel-batu.png" alt="Petik Apel">
+                    <div class="dest-card-content">
+                        <h4>Kebun Apel</h4>
+                        <p>Agrowisata petik apel langsung dari pohon</p>
+                        <div class="tags"><span class="tag">Agrowisata</span><span class="tag">Family</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-box">
+            <h3>Siap Explore Malang?</h3>
+            <p>Hubungi kami untuk paket wisata custom sesuai keinginan Anda. Konsultasi gratis!</p>
+            <a href="https://wa.me/62895639068080?text=Halo%20Admin%2C%20saya%20mau%20booking%20paket%20wisata%20Malang"
+                class="btn-white" target="_blank"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+        </div>
+
+        <section>
+            <h2 class="section-title">Tips <span class="gradient-text">Perjalanan</span></h2>
+            <div class="tips-grid">
+                <div class="tip-card"><i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Waktu Terbaik</h4>
+                        <p>April-Oktober (musim kemarau) untuk Bromo dan pantai. Weekday untuk menghindari keramaian.
+                        </p>
+                    </div>
+                </div>
+                <div class="tip-card"><i class="fas fa-tshirt"></i>
+                    <div>
+                        <h4>Pakaian</h4>
+                        <p>Bawa jaket tebal untuk Bromo. Malang sejuk (20-28°C), Batu lebih dingin (15-24°C).</p>
+                    </div>
+                </div>
+                <div class="tip-card"><i class="fas fa-car"></i>
+                    <div>
+                        <h4>Transportasi</h4>
+                        <p>Sewa mobil+driver lebih fleksibel. Maroon Travel siap melayani kebutuhan perjalanan Anda.</p>
+                    </div>
+                </div>
+                <div class="tip-card"><i class="fas fa-wallet"></i>
+                    <div>
+                        <h4>Budget</h4>
+                        <p>Backpacker: 300-500rb/hari. Mid-range: 500rb-1jt/hari. Premium: 1-2jt/hari.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-plane-departure"></i>
+                        <span>Maroon<strong>Travel</strong></span>
+                    </a>
+                    <p>Agen perjalanan premium untuk rute Malang - Surabaya dengan layanan terbaik dan armada
+                        berkualitas.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="service.html#airport">Airport Transfer</a></li>
+                        <li><a href="service.html#private">Private Transfer</a></li>
+                        <li><a href="service.html#rombongan">Paket Rombongan</a></li>
+                        <li><a href="service.html#shuttle">Shuttle Bus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Raya Malang-Surabaya No. 123</li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/62895639068080" target="_blank">+62
+                                895-6390-68080</a></li>
+                        <li><i class="fas fa-envelope"></i> info@maroontravel.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maroon Travel. All rights reserved. Designed with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/62895639068080?text=Halo%20Maroon%20Travel%2C%20saya%20ingin%20bertanya%20tentang%20wisata%20Malang."
+        class="whatsapp-float" target="_blank" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat Kami</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js" defer></script>
+    <script>
+        function showItinerary(id) {
+            document.querySelectorAll('.itinerary-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.itinerary-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

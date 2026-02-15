@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Surabaya - Panduan Wisata Kota Pahlawan | Maroon Travel</title>
+    <meta name="description"
+        content="Panduan lengkap wisata Surabaya: destinasi sejarah, kuliner legendaris, itinerary 1-3 hari, dan tips perjalanan. Jelajahi Kota Pahlawan bersama Maroon Travel!">
+    <meta name="keywords"
+        content="wisata surabaya, explore surabaya, itinerary surabaya, destinasi surabaya, kuliner surabaya, kota pahlawan, maroon travel">
+    <link rel="canonical" href="https://maroontravel.web.id/explore-surabaya.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maroontravel.web.id/explore-surabaya.html" />
+    <meta property="og:title" content="Explore Surabaya - Panduan Wisata Kota Pahlawan | Maroon Travel" />
+    <meta property="og:description"
+        content="Jelajahi keindahan Kota Pahlawan dengan panduan wisata lengkap dari Maroon Travel. Destinasi sejarah, kuliner, dan tips perjalanan." />
+    <meta property="og:image" content="https://maroontravel.web.id/assets/surabaya.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Panduan Wisata Surabaya Kota Pahlawan - Maroon Travel" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Maroon Travel" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://maroontravel.web.id/explore-surabaya.html" />
+    <meta name="twitter:title" content="Explore Surabaya - Panduan Wisata Kota Pahlawan | Maroon Travel" />
+    <meta name="twitter:description"
+        content="Jelajahi keindahan Kota Pahlawan dengan panduan wisata lengkap dari Maroon Travel." />
+    <meta name="twitter:image" content="https://maroontravel.web.id/assets/surabaya.jpg" />
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .explore-hero {
+            height: 60vh;
+            min-height: 450px;
+            background: linear-gradient(135deg, rgba(128, 0, 32, 0.85), rgba(196, 30, 58, 0.75)), url('assets/surabaya.jpg')center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding-top: 80px
+        }
+
+        .explore-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px
+        }
+
+        .explore-hero p {
+            font-size: 1.2rem;
+            opacity: .9;
+            max-width: 600px;
+            margin: 0 auto 30px
+        }
+
+        .explore-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px
+        }
+
+        .intro-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px
+        }
+
+        .intro-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px
+        }
+
+        .intro-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px
+        }
+
+        .intro-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .15)
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin: 50px 0
+        }
+
+        .highlight-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            transition: .3s
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px)
+        }
+
+        .highlight-card i {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 15px
+        }
+
+        .highlight-card h4 {
+            margin-bottom: 10px
+        }
+
+        .highlight-card p {
+            font-size: .9rem;
+            color: #666
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px
+        }
+
+        .itinerary-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap
+        }
+
+        .itinerary-tab {
+            padding: 12px 30px;
+            border-radius: 50px;
+            background: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: .3s
+        }
+
+        .itinerary-tab.active {
+            background: var(--gradient-primary);
+            color: #fff
+        }
+
+        .itinerary-content {
+            display: none
+        }
+
+        .itinerary-content.active {
+            display: block
+        }
+
+        .day-schedule {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            margin-bottom: 30px
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #eee
+        }
+
+        .day-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700
+        }
+
+        .day-title h3 {
+            margin: 0 0 5px;
+            font-size: 1.4rem
+        }
+
+        .day-title span {
+            color: #888;
+            font-size: .9rem
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e0e0e0
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 25px
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 2px var(--color-primary)
+        }
+
+        .timeline-item h4 {
+            margin: 0 0 8px;
+            color: var(--color-dark)
+        }
+
+        .timeline-item .time {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: .9rem;
+            margin-bottom: 5px
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: #666;
+            font-size: .95rem
+        }
+
+        .dest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0
+        }
+
+        .dest-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .1);
+            transition: .3s;
+            background: #fff
+        }
+
+        .dest-card:hover {
+            transform: translateY(-10px)
+        }
+
+        .dest-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover
+        }
+
+        .dest-card-content {
+            padding: 25px
+        }
+
+        .dest-card h4 {
+            margin: 0 0 10px
+        }
+
+        .dest-card p {
+            color: #666;
+            font-size: .9rem;
+            margin-bottom: 15px
+        }
+
+        .dest-card .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .dest-card .tag {
+            background: #fff0f0;
+            color: var(--color-primary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: .8rem
+        }
+
+        .cta-box {
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            color: #fff;
+            margin: 60px 0
+        }
+
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px
+        }
+
+        .cta-box p {
+            opacity: .9;
+            margin-bottom: 25px
+        }
+
+        .cta-box .btn-white {
+            background: #fff;
+            color: var(--color-primary);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: .3s
+        }
+
+        .cta-box .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px
+        }
+
+        .tip-card {
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            gap: 20px
+        }
+
+        .tip-card i {
+            font-size: 2rem;
+            color: var(--color-primary)
+        }
+
+        .tip-card h4 {
+            margin: 0 0 10px
+        }
+
+        .tip-card p {
+            margin: 0;
+            color: #666;
+            font-size: .95rem
+        }
+
+        .kuliner-section {
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 60px 0
+        }
+
+        .kuliner-section h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #b8860b
+        }
+
+        .kuliner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px
+        }
+
+        .kuliner-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .05)
+        }
+
+        .kuliner-item i {
+            font-size: 2rem;
+            color: #b8860b;
+            margin-bottom: 10px
+        }
+
+        .kuliner-item h5 {
+            margin: 0 0 5px
+        }
+
+        .kuliner-item p {
+            margin: 0;
+            font-size: .85rem;
+            color: #888
+        }
+
+        @media(max-width:992px) {
+
+            .intro-section,
+            .tips-grid {
+                grid-template-columns: 1fr
+            }
+
+            .highlights-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .dest-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:600px) {
+            .explore-hero h1 {
+                font-size: 2rem
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo"><i
+                    class="fas fa-plane-departure"></i><span>Maroon<strong>Travel</strong></span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="service.html" class="nav-link">Services</a>
+                <a href="destination.html" class="nav-link active">Destinations</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="https://wa.me/62895639068080" target="_blank" class="btn-primary"
+                    style="padding:8px 20px;border-radius:50px;margin-left:10px">Contact Us <i
+                        class="fab fa-whatsapp"></i></a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="explore-hero">
+        <div>
+            <span class="hero-badge"><i class="fas fa-map-marked-alt"></i> Panduan Wisata Lengkap</span>
+            <h1>Explore <span style="color:#ffd700">Surabaya</span></h1>
+            <p>Jelajahi Kota Pahlawan dengan panduan lengkap destinasi sejarah, kuliner legendaris, dan pengalaman urban
+                terbaik di Jawa Timur.</p>
+            <a href="#itinerary" class="btn-primary" style="padding:15px 35px"><i class="fas fa-route"></i> Lihat
+                Itinerary</a>
+        </div>
+    </section>
+
+    <div class="explore-container">
+        <section class="intro-section">
+            <div class="intro-content">
+                <h2>Selamat Datang di <span class="gradient-text">Kota Pahlawan</span></h2>
+                <p>Surabaya adalah kota metropolitan terbesar kedua di Indonesia dengan sejarah heroik yang
+                    membanggakan. Dari pertempuran 10 November 1945 hingga menjadi pusat ekonomi Jawa Timur, Surabaya
+                    menawarkan perpaduan unik antara heritage, modernitas, dan kuliner yang menggugah selera.</p>
+                <p>Kota ini menjadi gerbang utama menuju destinasi wisata Jawa Timur seperti Bromo, Malang, dan
+                    Banyuwangi. Dengan Bandara Juanda International, Surabaya adalah titik awal sempurna untuk
+                    petualangan Anda.</p>
+                <div style="display:flex;gap:15px;margin-top:25px">
+                    <a href="https://wa.me/62895639068080?text=Halo%20Admin%2C%20saya%20tertarik%20paket%20wisata%20Surabaya"
+                        class="btn-primary" target="_blank"><i class="fab fa-whatsapp"></i>
+                        Konsultasi Gratis</a>
+                    <a href="packages.html" class="btn-outline">Lihat Paket</a>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="assets/surabaya.jpg" alt="Pemandangan Kota Surabaya">
+            </div>
+        </section>
+
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <i class="fas fa-monument"></i>
+                <h4>Wisata Sejarah</h4>
+                <p>Tugu Pahlawan, Museum, dan situs bersejarah perjuangan kemerdekaan</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-shopping-bag"></i>
+                <h4>Pusat Belanja</h4>
+                <p>Tunjungan Plaza, Galaxy Mall, dan pusat perbelanjaan modern</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-utensils"></i>
+                <h4>Kuliner Legendaris</h4>
+                <p>Rawon, Rujak Cingur, Lontong Balap, dan Sate Klopo</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-plane-departure"></i>
+                <h4>Gateway Jatim</h4>
+                <p>Akses mudah ke Bromo, Malang, Banyuwangi via Juanda</p>
+            </div>
+        </div>
+
+        <section id="itinerary">
+            <h2 class="section-title">Itinerary <span class="gradient-text">Tentatif</span></h2>
+            <div class="itinerary-tabs">
+                <button class="itinerary-tab active" onclick="showItinerary('1day')">1 Hari</button>
+                <button class="itinerary-tab" onclick="showItinerary('2day')">2 Hari 1 Malam</button>
+                <button class="itinerary-tab" onclick="showItinerary('3day')">3 Hari 2 Malam</button>
+            </div>
+
+            <div id="1day" class="itinerary-content active">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>Heritage & Kuliner Tour</h3><span>Best for: Transit, first-timer, history lover</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Sarapan di Rawon Setan</h4>
+                            <p>Nikmati rawon legendaris yang buka 24 jam di Jalan Embong Malang</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>Tugu Pahlawan & Museum</h4>
+                            <p>Kenali sejarah pertempuran 10 November 1945 dan perjuangan Bung Tomo</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Makan Siang</h4>
+                            <p>Lontong Balap Pak Gendut atau Rujak Cingur Pak Elan</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">13:30</div>
+                            <h4>House of Sampoerna</h4>
+                            <p>Museum rokok kretek dalam bangunan kolonial bersejarah</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">15:30</div>
+                            <h4>Jembatan Suramadu</h4>
+                            <p>Foto di jembatan terpanjang Indonesia dengan view Selat Madura</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">18:00</div>
+                            <h4>Taman Bungkul</h4>
+                            <p>Sunset, street food, dan suasana hangat warga Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="2day" class="itinerary-content">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>City Tour & Shopping</h3><span>Sejarah, belanja, dan kuliner</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Sarapan Nasi Bebek Sinjay</h4>
+                            <p>Bebek goreng legendaris dengan sambal uleg</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>Tugu Pahlawan & Museum</h4>
+                            <p>Wisata sejarah perjuangan kemerdekaan</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Lunch di Tunjungan Plaza</h4>
+                            <p>Food court dengan berbagai pilihan kuliner</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">13:00</div>
+                            <h4>Shopping Time</h4>
+                            <p>Tunjungan Plaza, Grand City, atau ITC Surabaya</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">17:00</div>
+                            <h4>Sunset di Suramadu</h4>
+                            <p>View spektakuler jembatan dan Selat Madura</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">19:00</div>
+                            <h4>Dinner & Nightlife</h4>
+                            <p>G-Walk Citraland untuk kuliner dan hiburan malam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">2</div>
+                        <div class="day-title">
+                            <h3>Culture & Heritage</h3><span>Museum, kampung arab, dan oleh-oleh</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Sarapan Soto Lamongan</h4>
+                            <p>Soto ayam dengan koya dan kerupuk</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>House of Sampoerna</h4>
+                            <p>Tur museum dan workshop linting rokok tradisional</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">11:30</div>
+                            <h4>Kampung Arab Ampel</h4>
+                            <p>Masjid Ampel, kuliner timur tengah, dan belanja kurma</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">13:00</div>
+                            <h4>Oleh-oleh Surabaya</h4>
+                            <p>Belanja Lapis Surabaya, Spikoe, dan Almond Crispy</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">15:00</div>
+                            <h4>Pulang / Lanjut ke Malang</h4>
+                            <p>Transfer ke bandara atau continue trip ke Malang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="3day" class="itinerary-content">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>Surabaya Heritage</h3><span>Wisata sejarah dan museum</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Rawon Setan</h4>
+                            <p>Sarapan rawon legendaris</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>Tugu Pahlawan</h4>
+                            <p>Monumen dan museum perjuangan</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Lunch: Rujak Cingur</h4>
+                            <p>Kuliner khas Surabaya yang wajib dicoba</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">14:00</div>
+                            <h4>House of Sampoerna</h4>
+                            <p>Museum dalam bangunan heritage</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">16:00</div>
+                            <h4>Kampung Arab Ampel</h4>
+                            <p>Wisata religi dan kuliner arab</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">19:00</div>
+                            <h4>Dinner G-Walk</h4>
+                            <p>Kuliner dan hiburan malam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">2</div>
+                        <div class="day-title">
+                            <h3>Day Trip ke Madura</h3><span>Jembatan Suramadu dan eksplor Madura</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">07:00</div>
+                            <h4>Berangkat ke Madura</h4>
+                            <p>Via Jembatan Suramadu (30 menit)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">08:30</div>
+                            <h4>Bukit Jaddih</h4>
+                            <p>Bekas tambang kapur dengan view unik</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">11:00</div>
+                            <h4>Sate Madura Asli</h4>
+                            <p>Sate kambing dan ayam dengan bumbu kacang khas</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">13:00</div>
+                            <h4>Pantai Lombang</h4>
+                            <p>Pantai pasir putih dengan pohon cemara</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">17:00</div>
+                            <h4>Kembali ke Surabaya</h4>
+                            <p>Sunset view dari Suramadu</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">19:00</div>
+                            <h4>Taman Bungkul</h4>
+                            <p>Street food dan santai malam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <div class="day-number">3</div>
+                        <div class="day-title">
+                            <h3>Shopping & Pulang</h3><span>Belanja, oleh-oleh, dan wisata modern</span>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">08:00</div>
+                            <h4>Breakfast</h4>
+                            <p>Nasi Goreng di hotel atau Lontong Balap</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:30</div>
+                            <h4>Kebun Binatang Surabaya</h4>
+                            <p>KBS dengan koleksi satwa lengkap (opsional)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">12:00</div>
+                            <h4>Lunch & Shopping</h4>
+                            <p>Tunjungan Plaza atau Galaxy Mall</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">14:00</div>
+                            <h4>Beli Oleh-oleh</h4>
+                            <p>Lapis Surabaya, Spikoe Resep Kuno, Almond Crispy</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">16:00</div>
+                            <h4>Transfer ke Bandara</h4>
+                            <p>Menuju Bandara Juanda untuk penerbangan pulang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Destinasi <span class="gradient-text">Populer</span></h2>
+            <div class="dest-grid">
+                <div class="dest-card"><img src="assets/surabaya.jpg" alt="Tugu Pahlawan">
+                    <div class="dest-card-content">
+                        <h4>Tugu Pahlawan</h4>
+                        <p>Monumen ikonik simbol perjuangan arek-arek Suroboyo</p>
+                        <div class="tags"><span class="tag">Heritage</span><span class="tag">History</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/service-shuttle.jpg" alt="Suramadu">
+                    <div class="dest-card-content">
+                        <h4>Jembatan Suramadu</h4>
+                        <p>Jembatan terpanjang Indonesia menghubungkan Jawa-Madura</p>
+                        <div class="tags"><span class="tag">Landmark</span><span class="tag">Sunset</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/about-office.jpg" alt="House of Sampoerna">
+                    <div class="dest-card-content">
+                        <h4>House of Sampoerna</h4>
+                        <p>Museum rokok dalam bangunan kolonial Belanda</p>
+                        <div class="tags"><span class="tag">Museum</span><span class="tag">Heritage</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/service-private.jpg" alt="Kampung Arab">
+                    <div class="dest-card-content">
+                        <h4>Kampung Arab Ampel</h4>
+                        <p>Wisata religi, Masjid Ampel, dan kuliner timur tengah</p>
+                        <div class="tags"><span class="tag">Religi</span><span class="tag">Kuliner</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/destination-batu.jpg" alt="Taman Bungkul">
+                    <div class="dest-card-content">
+                        <h4>Taman Bungkul</h4>
+                        <p>Ruang terbuka hijau terbaik Asia dengan street food</p>
+                        <div class="tags"><span class="tag">Park</span><span class="tag">Street Food</span></div>
+                    </div>
+                </div>
+                <div class="dest-card"><img src="assets/hero.jpg" alt="G-Walk">
+                    <div class="dest-card-content">
+                        <h4>G-Walk Citraland</h4>
+                        <p>Pusat kuliner dan hiburan malam modern</p>
+                        <div class="tags"><span class="tag">Nightlife</span><span class="tag">Food</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="kuliner-section">
+            <h3><i class="fas fa-utensils"></i> Kuliner Wajib Coba di Surabaya</h3>
+            <div class="kuliner-grid">
+                <div class="kuliner-item">
+                    <i class="fas fa-bowl-food"></i>
+                    <h5>Rawon</h5>
+                    <p>Sup daging hitam khas Jatim</p>
+                </div>
+                <div class="kuliner-item">
+                    <i class="fas fa-salad"></i>
+                    <h5>Rujak Cingur</h5>
+                    <p>Rujak dengan irisan cingur sapi</p>
+                </div>
+                <div class="kuliner-item">
+                    <i class="fas fa-burger"></i>
+                    <h5>Lontong Balap</h5>
+                    <p>Lontong dengan tahu, taoge, lentho</p>
+                </div>
+                <div class="kuliner-item">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h5>Sate Klopo</h5>
+                    <p>Sate dengan parutan kelapa</p>
+                </div>
+                <div class="kuliner-item">
+                    <i class="fas fa-fish"></i>
+                    <h5>Pecel Lele</h5>
+                    <p>Lele goreng dengan sambal pecel</p>
+                </div>
+                <div class="kuliner-item">
+                    <i class="fas fa-cake-candles"></i>
+                    <h5>Lapis Surabaya</h5>
+                    <p>Kue lapis legendaris oleh-oleh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h3>Siap Explore Surabaya?</h3>
+            <p>Hubungi kami untuk paket wisata Surabaya atau transfer ke/dari Bandara Juanda. Konsultasi gratis!</p>
+            <a href="https://wa.me/62895639068080?text=Halo%20Admin%2C%20saya%20mau%20booking%20paket%20wisata%20Surabaya"
+                class="btn-white" target="_blank"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+        </div>
+
+        <section>
+            <h2 class="section-title">Tips <span class="gradient-text">Perjalanan</span></h2>
+            <div class="tips-grid">
+                <div class="tip-card"><i class="fas fa-sun"></i>
+                    <div>
+                        <h4>Cuaca</h4>
+                        <p>Surabaya panas (30-35°C). Bawa sunblock, topi, dan minum banyak air. AC di mall sangat
+                            dingin, bawa jaket tipis.</p>
+                    </div>
+                </div>
+                <div class="tip-card"><i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hindari Jam Sibuk</h4>
+                        <p>Traffic padat jam 07-09 dan 17-19. Rencanakan perjalanan di luar jam sibuk untuk efisiensi
+                            waktu.</p>
+                    </div>
+                </div>
+                <div class="tip-card"><i class="fas fa-car"></i>
+                    <div>
+                        <h4>Transportasi</h4>
+                        <p>Gunakan Grab/Gojek untuk mobilitas. Untuk day trip, sewa mobil+driver dari Maroon Travel
+                            lebih nyaman.</p>
+                    </div>
+                </div>
+                <div class="tip-card"><i class="fas fa-wallet"></i>
+                    <div>
+                        <h4>Budget</h4>
+                        <p>Backpacker: 200-400rb/hari. Mid-range: 500rb-1jt/hari. Premium: 1-3jt/hari (termasuk hotel
+                            bintang 4-5).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-plane-departure"></i>
+                        <span>Maroon<strong>Travel</strong></span>
+                    </a>
+                    <p>Agen perjalanan premium untuk rute Malang - Surabaya dengan layanan terbaik dan armada
+                        berkualitas.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="service.html#airport">Airport Transfer</a></li>
+                        <li><a href="service.html#private">Private Transfer</a></li>
+                        <li><a href="service.html#rombongan">Paket Rombongan</a></li>
+                        <li><a href="service.html#shuttle">Shuttle Bus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Raya Malang-Surabaya No. 123</li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/62895639068080" target="_blank">+62
+                                895-6390-68080</a></li>
+                        <li><i class="fas fa-envelope"></i> info@maroontravel.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maroon Travel. All rights reserved. Designed with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/62895639068080?text=Halo%20Maroon%20Travel%2C%20saya%20ingin%20bertanya%20tentang%20wisata%20Surabaya."
+        class="whatsapp-float" target="_blank" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat Kami</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js" defer></script>
+    <script>
+        function showItinerary(id) {
+            document.querySelectorAll('.itinerary-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.itinerary-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
