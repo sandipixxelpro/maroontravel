@@ -1,0 +1,23 @@
+{
+    "name": "maroon-travel",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Maroon Travel - Premium Travel Agency Malang Surabaya",
+    "main": "index.html",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maroontravel/website"
+    },
+    "keywords": [
+        "travel",
+        "malang",
+        "surabaya",
+        "shuttle",
+        "bus",
+        "premium",
+        "maroon-travel"
+    ],
+    "author": "Maroon Travel",
+    "license": "MIT"
+}
